@@ -1,61 +1,80 @@
-h1 {
-    font-weight: 700;
+h1, h2, h3, h4, h5 {
     font-family: "Open Sans", sans-serif;
-    text-align: center;
     line-height: 1.2;
+    text-align: center;
     letter-spacing: -2px;
+}
+
+h1 {
     font-size: 62px;
 }
 
 h2 {
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.2;
-    letter-spacing: -2px;
     font-size: 48px;
-    font-family: "Open Sans", sans-serif;
 }
 
 h3 {
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -2px;
     font-size: 48px;
-    font-family: "Open Sans", sans-serif;
 }
 
 h4 {
-   font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -2px;
     font-size: 32px;
-    font-family: "Open Sans", sans-serif; 
 }
 
 h5 {
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -2px;
     font-size: 24px;
-    font-family: "Open Sans", sans-serif; 
+}
+
+p, a, .small-text {
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
 }
 
 p {
-    font-weight: 400;
-    line-height: 1.5;
     font-size: 20px;
-    font-family: "Open Sans", sans-serif;
     color: rgb(63, 63, 63);
 }
 
 a {
-    font-weight: 400;
     text-decoration: none;
-    line-height: 1.5;
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+}
+
+.small-text {
+    font-size: 12px;
 }
 
 ul {
     list-style: none;
+}
+
+.btn {
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-primary:link, .btn-primary:visited {
+    color: #339af0;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    color: #1c7ed6;
+}
+
+.btn-secondary:link, .btn-secondary:visited {
+    color:#9775fa;
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+    color: #7048e8;
+}
+
+.btn-primary {
+    color: #339af0;
+}
+
+.btn-secondary {
+    color: #9775fa;
 }
