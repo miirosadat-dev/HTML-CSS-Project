@@ -128,7 +128,8 @@ ul {
 }
 
 .btn-secondary {
-  color: #9775fa;
+  background-color: #4719cf;
+  color: #ffffff;
 }
 
 .btn-primary-outline:link,
@@ -273,5 +274,5 @@ ul {
 .footer-links-container {
   display: flex;
   gap: 2rem;
-  justify-content: baseline;
+  justify-content: center;
 }
