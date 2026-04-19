@@ -1,80 +1,277 @@
-h1, h2, h3, h4, h5 {
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -2px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.header {
+  height: 100vh;
+  min-height: 580px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -2px;
 }
 
 h1 {
-    font-size: 62px;
+  font-size: 6.2rem;
 }
 
 h2 {
-    font-size: 48px;
+  font-size: 4.8rem;
 }
 
 h3 {
-    font-size: 48px;
+  font-size: 4.8rem;
 }
 
 h4 {
-    font-size: 32px;
+  font-size: 3.2rem;
 }
 
 h5 {
-    font-size: 24px;
+  font-size: 2.4rem;
 }
 
-p, a, .small-text {
-    line-height: 1.5;
-    font-family: "Open Sans", sans-serif;
+p,
+a,
+.small-text {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
-    font-size: 20px;
-    color: rgb(63, 63, 63);
+  font-size: 2rem;
+  color: rgb(63, 63, 63);
 }
 
 a {
-    text-decoration: none;
-    font-size: 16px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
 }
 
 .small-text {
-    font-size: 12px;
+  font-size: 1.2rem;
+}
+.hero-section-btn {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .btn {
-    font-weight: 400;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    text-decoration: none;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 8px;
 }
 
-.btn-primary:link, .btn-primary:visited {
-    color: #339af0;
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: #1f94f3;
+  border: 1px solid #339af0;
+  color: #ffffff;
 }
 
-.btn-primary:hover, .btn-primary:active {
-    color: #1c7ed6;
+.btn-primary:hover,
+.btn-primary:active {
+  color: #1c7ed6;
+  border: 1px solid #1c7ed6;
 }
 
-.btn-secondary:link, .btn-secondary:visited {
-    color:#9775fa;
+.btn-secondary:link,
+.btn-secondary:visited {
+  color: #9775fa;
 }
 
-.btn-secondary:hover, .btn-secondary:active {
-    color: #7048e8;
+.btn-secondary:hover,
+.btn-secondary:active {
+  color: #7048e8;
 }
 
 .btn-primary {
-    color: #339af0;
+  color: #339af0;
 }
 
 .btn-secondary {
-    color: #9775fa;
+  color: #9775fa;
+}
+
+.btn-primary-outline:link,
+.btn-primary-outline:visited {
+  color: #339af0;
+  background-color: #ffffff;
+  border: 1px solid #339af0;
+}
+
+.btn-primary-outline:hover,
+.btn-primary-outline:active {
+  color: #1c7ed6;
+  background-color: #ffffff;
+  border: 1px solid #1c7ed6;
+}
+
+.hero-section,
+.cta-section,
+.footer {
+  text-align: center;
+}
+
+.cta-section {
+  margin-bottom: 30rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-card {
+  background-color: #339af0;
+  max-width: 1000px;
+  padding: 10rem 20rem;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.cta-heading {
+  margin-bottom: 3rem;
+}
+
+.highlight {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.highlight-primary {
+  background-color: #339af0;
+}
+
+.highlight-secondary {
+  background-color: #9775fa;
+}
+
+.highlight-tertiary {
+  background-color: #ff922b;
+}
+
+.logo-md {
+  width: 100px;
+}
+
+.logo-sm {
+  width: 80px;
+}
+
+.features-1 {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.feature-img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.social-icons {
+  width: 20px;
+}
+
+.navbar {
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.nav-btn-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-heading {
+  margin-bottom: 1rem;
+}
+
+.hero-paragragh {
+  margin-bottom: 5rem;
+}
+
+.hero-section {
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-main-heading {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.features-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15rem;
+  column-gap: 5rem;
+}
+
+.feature-heading {
+  margin-bottom: 2rem;
+}
+
+.features-section {
+  margin-bottom: 10rem;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.social-icons-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.footer-links-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: baseline;
 }
